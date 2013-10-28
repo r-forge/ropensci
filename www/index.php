@@ -24,10 +24,10 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 <body>
 
 <!-- R-Forge Logo -->
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0">
 <tr><td>
 <a href="http://r-forge.r-project.org/"><img src="http://<?php echo $themeroot; ?>/imagesrf/logo.png" border="0" alt="R-Forge Logo" /> </a> </td> </tr>
-</table>
+</table> -->
 
 
 <!-- get project title  -->
@@ -43,7 +43,11 @@ echo $contents; } ?>
 
 <!-- end of project description -->
 
-<p> No content added. </p>
+<a href="http://ropensci.org/"><img src=""http://assets.ropensci.org/media_kit/ropensci_main.png""></a>
+
+<br>
+
+<p> This is our R-Forge location for rOpenSci packages. We develop our R packages on Github <a href="http://github.com/ropensci">here</a>, but we are pushing development versions of our packages here as well to get binaries for Windows and Mac OSX to make installation of development versions easier.</p>
 
 <p> The <strong>project summary page</strong> you can find <a href="http://<?php echo $domain; ?>/projects/<?php echo $group_name; ?>/"><strong>here</strong></a>. </p>
 
