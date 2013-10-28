@@ -16,6 +16,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en   ">
 
   <head>
+  	<link rel="icon" href="http://assets.ropensci.org/ico/favicon.ico" type="image/x-icon">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title><?php echo $group_name; ?></title>
 	<link href="http://<?php echo $themeroot; ?>styles/estilo1.css" rel="stylesheet" type="text/css" />
@@ -43,7 +44,7 @@ echo $contents; } ?>
 
 <!-- end of project description -->
 
-<a href="http://ropensci.org/"><img src=""http://assets.ropensci.org/media_kit/ropensci_main.png""></a>
+<a href="http://ropensci.org/"><img src="http://assets.ropensci.org/media_kit/ropensci_main.png"/></a>
 
 <br>
 
