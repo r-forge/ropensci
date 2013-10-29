@@ -1,0 +1,9 @@
+Package: rbitly
+Type: Package
+Title: Programmatic interface to bit.ly
+Version: 1.0
+Date: 2012-07-15
+Author: Karthik Ram
+Maintainer: Karthik Ram <karthik.ram@gmail.com>
+Description: Allows one to query the bit.ly API
+License: CC0

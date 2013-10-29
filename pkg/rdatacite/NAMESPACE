@@ -1,0 +1,7 @@
+export(dc_getrecord)
+export(dc_identify)
+export(dc_listidentifiers)
+export(dc_listmetadataformats)
+export(dc_listrecords)
+export(dc_listsets)
+import(OAIHarvester)

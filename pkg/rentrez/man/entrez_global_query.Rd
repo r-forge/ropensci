@@ -1,0 +1,20 @@
+\name{entrez_global_query}
+\alias{entrez_global_query}
+\title{See how many hits there are for a given term across all NCBI Entrez databses}
+\usage{
+  entrez_global_query(term)
+}
+\arguments{
+  \item{term}{the search term to use}
+}
+\value{
+  a named vector with counts for each a datbase
+}
+\description{
+  See how many hits there are for a given term across all
+  NCBI Entrez databses
+}
+\examples{
+NCBI_data_on_best_butterflies_ever <- entrez_global_query(term="Heliconius")
+}
+

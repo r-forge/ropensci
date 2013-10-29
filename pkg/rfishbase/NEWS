@@ -1,0 +1,54 @@
+rfishbase 0.2-1
+===============
+
+* Avoid call to data and unassigned global variable fish.data (Fixes check NOTE)
+* Updated data cache
+* Updated documentation
+
+rfishbase 0.2-0
+===============
+
+* Udated documentation 
+* release to CRAN
+
+
+rfishbase 0.1-1
+===============
+
+* Bug Fix: uses the alternative (US based) server to access data, which seems to be more stable.   
+
+
+rfishbase 0.0-9
+===============
+
+* queries will now load the cache automatically if not passed a fish.data 
+data object
+* Deprecated older queries such as `familySearch` and `habitatSearch`.  
+All such searches can be performed with `which_fish`
+* Experimental `getRefs` function will get reference numbers associated
+with any query
+* Documentation improved and extended.  HTML copies with 
+examples [hosted on github.](http://ropensci.github.com/rfishbase)
+
+
+
+rfishbase 0.0-8
+===============
+* Compressed data
+
+
+rfishbase 0.0-7
+===============
+* Documentation updates
+* Extended which_fish() to include taxanomic queries
+* morphometric traits now return species name labels on traits
+
+
+rfishbase 0.0-6
+===============
+
+
+* released to CRAN
+
+
+

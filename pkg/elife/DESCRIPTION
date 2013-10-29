@@ -1,0 +1,23 @@
+Package: elife
+Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),
+    email = "myrmecocystus@gmail.com"))
+Version: 0.0.1
+Date: 2013-01-23
+License: CC0
+Title: R interface to the eLife API.
+Description: R interface to the eLife API.
+Imports:
+    XML,
+    RCurl (>= 1.6),
+    stringr,
+    plyr,
+    httr (>= 0.2),
+    RJSONIO,
+Suggests:
+    testthat,
+    roxygen2
+Collate:
+    'elife_doi.r'
+    'elife_paper.r'
+    'elife-package.r'
+    'searchelife.r'

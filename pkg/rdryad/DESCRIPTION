@@ -1,0 +1,36 @@
+Package: rdryad
+Type: Package
+Description: Interface to the API for Dryad
+Title: Dryad API interface.
+Version: 0.1.1
+License: CC0
+Date: 2013-1-29
+Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),
+    email = "myrmecocystus@gmail.com"),
+    person("Carl", "Boettiger", role = "aut",
+    email = "cboettig@gmail.com"),
+    person("Karthik", "Ram", role = "aut",
+    email = "karthik.ram@gmail.com"))
+URL: http://www.github.com/ropensci/rdryad
+BugReports: https://github.com/ropensci/rdryad/issues
+Imports:
+    XML,
+    RCurl,
+    OAIHarvester,
+    ape,
+    gdata,
+    plyr,
+    stringr,
+    RJSONIO
+Collate:
+    'download_dryadmetadata.r'
+    'download_url.r'
+    'dryad_getfile.r'
+    'getalldryad_metadata.r'
+    'search_dryad.r'
+    'totimp.r'
+    'totimp_dryad.r'
+    'dr_identify.r'
+    'dr_listidentifiers.r'
+    'dr_listmetadataformats.r'
+    'dr_listsets.r'

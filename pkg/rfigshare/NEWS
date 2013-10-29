@@ -1,0 +1,30 @@
+
+v0.2-7
+-----
+* Bugfix following changes to API in `fs_update`
+
+
+v0.2-6
+------
+* Resubmit to CRAN (vignettes not ready for 3.0.0 apparently)
+
+v0.2-5
+------
+* submit to CRAN
+
+v0.2-4
+------
+* Method to delete attachments (issue [#42](https://github.com/ropensci/rfigshare/issues/42))  
+* Updated documentation. 
+* knitr based vignette for R 3.0.0
+
+v0.2-3
+------
+* Closes several bugs causing search results not to return (see issues [37](https://github.com/ropensci/rfigshare/issues/37) [38](https://github.com/ropensci/rfigshare/issues/38) 40(https://github.com/ropensci/rfigshare/issues/40))
+* Improved documentation
+
+v0.2 
+----
+
+* Initial release to CRAN
+* See open & closed issues for details: https://github.com/ropensci/rfigshare/issues

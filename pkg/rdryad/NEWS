@@ -1,0 +1,14 @@
+rdryad 0.1.1
+===============
+
+BUG FIXES
+
+* removed read.jpeg as a dependency 
+
+
+rdryad 0.1
+===============
+
+NEW FEATURES 
+
+* released to CRAN

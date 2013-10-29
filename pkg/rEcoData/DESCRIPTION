@@ -1,0 +1,14 @@
+Package: rEcoData
+Type: Package
+Title: Wrapper for EcologicalData.org
+Version: .01
+Date: 2012-02-20
+Author: Karthik Ram, Ethan White
+Authors@R: c(person("Karthik", "Ram", role = c("aut", "cre"),
+    email = "karthik.ram@gmail.com"),
+    person("Ethan", "White", role = "aut",
+    email = "ethans_email"))
+Maintainer: Karthik Ram <karthik.ram@gmail.com>
+Description: Provides access to a range of published ecological datasets. Package currently in early development. Details forthcoming.
+License: CCOO
+URL: http://www.github.com/ropensci/rEcoData
