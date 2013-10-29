@@ -1,0 +1,42 @@
+Package: rnoaa
+Authors@R: c(person("Hart", "Ted", role = c("aut", "cre"),
+    email = "emhart@gmail.com"),
+    person("Scott", "Chamberlain", role = "aut",
+    email = "myrmecocystus@gmail.com"),
+    person("Karthik", "Ram", role = "aut",
+    email = "karthik.ram@gmail.com"))
+Version: 0.0.2
+License: CC0
+Title: NOAA climate data from R.
+Description: NOAA climate data from R.
+Date: 2013-10-24
+URL: https://github.com/ropensci/rnoaa
+BugReports: http://www.github.com/ropensci/rnoaa/issues
+LazyLoad: yes
+LazyData: yes
+Imports:
+    httr,
+    lubridate,
+    scales,
+    plyr,
+    ggplot2,
+    scales
+Suggests:
+    testthat,
+    roxygen2
+Collate:
+    'noaa_data.r'
+    'noaa_plot.r'
+    'rnoaa2-package.r'
+    'zzz.r'
+    'noaa_datasets.r'
+    'noaa_datatypes.r'
+    'noaa.r'
+    'noaa_stations.r'
+    'noaa_loc_search.r'
+    'seaice.r'
+    'noaa_loc_types.r'
+    'noaa_locs.r'
+    'noaa_search.r'
+    'startup.r'
+    'noaa_datacats.r'

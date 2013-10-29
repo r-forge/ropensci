@@ -1,0 +1,9 @@
+.Rbuildignore
+.Rproj.user
+.Rhistory
+.RData
+rWBclimate.Rproj
+.DS_Store
+.Rapp.history
+README.html
+

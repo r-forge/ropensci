@@ -1,0 +1,9 @@
+{
+    "path" : "~/github/ropensci/rpubmed/R",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+rgbif 0.3.6
+===============
+
+IMPROVEMENTS
+
+* Added back in functions, and .Rd files, from old version or rgbif that interacts with the old GBIF API.
+* Updated vignette to work with new GBIF API and fxns.
+
+NEW FEATURES
+
+* Added functions to interact with the new GBIF API, notably: country_codes(), dataset_metrics(), dataset_search(), datasets(), gbif_lookup(), gbifmap(), gist(), name_lookup(), name_usage(), networks(), nodes(), occ_count(), occ_get(), occ_search(), organizations(), rgbif-package(), stylegeojson(), togeojson(). See the README for a crosswalk from old functions to new ones. 
+* 
+
+rgbif 0.3.2
+===============
+
+BUG FIXES
+
+* Removed georeferencedonly parameter - is deprecated in the GBIF API
+
+
+rgbif 0.3.0
+===============
+
+IMPROVEMENTS
+
+* Added S3 objects: Output from calls to occurrencelist() and occurrence list_many() now of class gbiflist, and output from calls to densitylist() now of class gbifdens. 
+* Slight changes to gbifmaps() function.
+* url parameter in all functions moved into the function itself as the base GBIF API url doesn't need to be specified by user. 
+* Vignette added.
+
+NEW FEATURES
+
+* Added function country_codes() to look up 2 character ISO country codes for use in searches.
+* Added function occurrencelist_many() to handle searches of many species. 
+* Added functions togeojson() and stylegeosjon() to convert a data.frame with lat/long columns to geojson file format, and to add styling to data.frames before using togeojson() . 
+* occurrencelist() and occurrencelist_many() gain argument fixnames, which lets user change species names in output data.frame according to a variety of scenarios.
+* taxonsearch() gains argument accepted_status to accept only those names that have a status of accepted. In addition, this function has significant changes, and examples, to improve performance.
+
+
+rgbif 0.2.0
+===============
+
+IMPROVEMENTS
+
+* Improved code style, and simplified code in some functions.
+
+NEW FEATURES
+
+* occurrencelist() now handles scientific notation when maxresults are given in that form.
+* occurencelist() now can retrieve any number of records; was previously a max of 1000 records. 
+
+BUG FIXES
+
+* Demo "List" was returning incorrect taxon names - corrected now. 
+* Removed unused parameter 'latlongdf' in occurencelist().
+
+
+rgbif 0.1.5
+===============
+
+IMPROVEMENTS
+
+* Changed all functions to use RCurl instead of httr as httr was presenting some problems.
+* Two function, capwords and gbifxmlToDataFrame, added with documentation as internal functions. 
+
+NEW FEATURES
+
+* Added function density_spplist to get a species list or data.frame of species and their counts for any degree cell.
+* Added function densitylist to access to records showing the density of occurrence records from the GBIF Network by one-degree cell.
+* Added function gbifmap to make a simple map to visualize GBIF data.
+* Added function occurrencecount to count taxon concept records matching a range of filters.
+
+DEPRECATED
+
+* gbifdatause removed, was just a function to return the data sharing agreement from GBIF.
+
+
+rgbif 0.1.0
+===============
+
+NEW FEATURES 
+
+* released to CRAN

@@ -1,0 +1,37 @@
+\name{getindspatstations}
+\alias{getindspatstations}
+\title{Get all observations for a particular species or set of species.}
+\usage{
+  getindspatstations(speciesid = NULL, stationid = NULL,
+    year = NULL, printdf = TRUE)
+}
+\arguments{
+  \item{speciesid}{species id numbers, from 1 to infinity,
+  potentially, use e.g., c(52, 53, etc.) if more than one
+  species desired (numeric)}
+
+  \item{stationid}{use e.g., c(4881, 4882, etc.) if more
+  than one species desired (numeric)}
+
+  \item{year}{Year (numeric).}
+
+  \item{printdf}{print data.frame (default, TRUE) or not
+  (FALSE)}
+
+  \item{callopts}{Optional additional curl options
+  (debugging tools mostly)}
+}
+\value{
+  Observations for each species by date.
+}
+\description{
+  Get all observations for a particular species or set of
+  species.
+}
+\examples{
+\dontrun{
+getindspatstations(35, c(60, 259), 2009)
+getindspatstations(35, c(60, 259), 2009, 'xml')
+}
+}
+

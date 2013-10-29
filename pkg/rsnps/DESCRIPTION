@@ -1,0 +1,37 @@
+Package: rsnps
+Version: 0.0.5
+Date: 2013-10-02
+Description: A programmatic interface to various SNP datasets.
+Title: Interface to SNP data on the web.
+License: CC0
+Authors@R: c(
+    person("Scott", "Chamberlain", role = c("aut", "cre"),
+    email = "myrmecocystus@gmail.com"),
+    person("Kevin", "Ushey", role = "aut",
+    email = "kevinushey@gmail.com"))
+URL: https://github.com/ropensci/rsnps
+BugReports: https://github.com/ropensci/rsnps/issues
+Imports:
+    RJSONIO,
+    plyr,
+    stringr,
+    httr,
+    RCurl,
+    XML
+Suggests:
+    roxygen2,
+    testthat,
+    rjson
+Collate:
+    'genotypes.R'
+    'users.R'
+    'allgensnp.R'
+    'phenotypes.R'
+    'fetch_genotypes.R'
+    'allphenotypes.R'
+    'annotations.R'
+    'phenotypes_byid.R'
+    'LDSearch.R'
+    'NCBI_snp_query.R'
+    'utils.R'
+    'download_users.R'

@@ -1,0 +1,6 @@
+.gitignore
+^Makefile$
+.travis.yml
+man-roxygen
+^.*\.Rproj$
+^\.Rproj\.user$

@@ -1,0 +1,7 @@
+export(spimages)
+export(spmetadata)
+export(spoa)
+export(spoafulltext)
+import(RCurl)
+import(RJSONIO)
+import(XML)

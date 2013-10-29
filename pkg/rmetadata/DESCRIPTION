@@ -1,0 +1,46 @@
+Package: rmetadata
+Type: Package
+Title: Scholarly metadata in R.
+Version: 0.1
+License: CC0
+Date: 2013-03-21
+Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),
+    email = "myrmecocystus@gmail.com"))
+Description: A wrapper to get article metatdata for a number of databases,
+    including CrossRef, PubMed Central, DataCite, Pensoft, and Hindawi journals.
+URL: https://github.com/ropensci/rmetadata
+LazyLoad: yes
+LazyData: yes
+Imports:
+    XML,
+    httr,
+    plyr,
+    RJSONIO,
+    RCurl,
+    lubridate,
+    reshape
+Collate:
+    'md_getrecord.r'
+    'md_identify.r'
+    'md_listsets.r'
+    'md_listidentifiers.r'
+    'md_listmetadataformats.r'
+    'md_listrecords.r'
+    'count_identifiers.r'
+    'crossref_search.r'
+    'crossref_search_free.r'
+    'crossref_citation.r'
+    'crossref_r.r'
+    'short_doi.r'
+    'zzz.r'
+    'load_providers.r'
+    'update_providers.r'
+    'rmetadata-package.r'
+    'dpla_basic.r'
+    'dpla_fields.r'
+    'dpla_plot.r'
+    'crossref_openurl.r'
+    'dc_data.r'
+    'dc_search.r'
+    'mar_search.r'
+    'cambridge_search.r'

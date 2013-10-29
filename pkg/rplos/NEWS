@@ -1,0 +1,126 @@
+rplos 0.3.0
+------------
+
+NEW FEATURES
+
+* Added httr::stop_for_status() calls to a few functions to give informative http status errors when they happen
+
+BUG FIXES
+
+* Fixed bug in plot_throughtime() that was throwing errors and preventing fxn from working, thanks to Ben Bolker for the fix.
+* Simplified code in many functions to have cleaner and simpler code.
+* ... parameter in many functions changed to callopts=list(), which passes in curl options to a call to either RCurl::getForm() or httr::GET()
+* Fixed bug in function plosviews() that caused errors in some calls. Now forces full document searches, so that you get views data back for full papers only, not sections of papers. See package alm (https://github.com/ropensci/alm) for more in depth PLOS article-level metrics.
+
+
+rplos 0.2.0
+------------
+
+NEW FEATURES
+
+* All functions for interacting with the PLOS ALM (altmetrics) API have been removed, and are now in a separate package called alm (http://github.com/ropensci/alm).
+* Convenience functions `plosabstract`, `plosauthor`, `plosfigtabcaps`, `plossubject`, and `plostitle`, that search specifically within those sections of papers now wrap `searchplos`, so they should behave the same way.
+* ldfast() fxn added as an attempt to do ldply faster
+* performance improvements in searchplos
+
+BUG FIXES
+
+* Dependency on assertthat removed since it's not on CRAN.
+* Fixed namespace conflicts by importing only functions needed from some packages.
+* searchplos() now removes leading, trailing, and internal whitespace from character strings
+
+
+rplos 0.1.1
+------------
+
+* remove alm*() functions so that this package now only wraps the PLoS search API.
+
+
+rplos 0.1.0
+------------
+
+* The `almdateupdated` function has been deprecated - use `almupdated` instead.
+
+* The `articlelength` function has been deprecated - didn't see the usefulness any longer.
+
+* In general simplified and prettified code.
+
+* Changed from using RCurl to httr in many functions, but not all.
+
+* Added more examples for many functions.
+
+* Added three internal functions: `concat_todf`, `addmissing`, and `getkey`.
+
+* Added Karthik Ram as a package author.
+
+BUG FIXES
+
+* All `url` arguments in functions put inside functions as they are not likely to change that often.
+
+* Fixed `crossref` function, and added more examples.
+
+NEW FEATURES
+
+* The `alm` function (previously `almplosallviews`) gains many new features: now allows up to 50 DOIs per call; you can specify the source you want to get alm data from as an argument; you can specify the year you want to get alm data from as an argument.
+
+* Added the plosfields data file to get all the possible fields to use in function calls.
+
+
+NEW FUNCTIONS
+
+* `almplosallviews` changed to `alm`.
+
+* `almplotallviews` changed to `almplot`.
+
+* `almevents` added to specifically search and get detailed events data for a specific source or N sources. 
+
+* `crossref_r` gets 20 random DOIs from Crossref.org.
+
+* Added package startup message.
+
+* `journalnamekey` function to get the short name keys for each PLoS Journal.
+
+
+rplos 0.0-7
+------------
+
+IMPROVEMENTS AND BUG FIXES
+
+* ALM functions (any functions starting with alm) received updated arguments/parameters according to the ALM API version 3.0 changes. 
+
+* Bug fixes in general across library. 
+
+* Added tests.
+
+* `almplosallviews` now outputs different output - two data.frames, one total metrics (summed across time), and history (for metrics for each time period specified in the search)
+
+* `crossref` function returns R's native bibtype format.  See examples in `crossref` function documentation
+
+rplos 0.0-5
+------------
+
+IMPROVEMENTS AND BUG FIXES
+
+* `almpub` changed to `almdatepub`
+
+* changed help file `rplos` to `help` - use help('rplos') in R
+
+* changed URL from http://ropensci.org/ to https://github.com/ropensci/rplos
+
+* added sleep argument to `plosallviews` function to allow pauses between API calls when running `plosallviews` in a loop - this is an attempt to limit hitting the PLoS API too hard
+
+* various other fixed to functions
+
+* more examples added to some functions
+
+NEW FUNCTIONS
+
+* added function `journalnamekey` to get short keys for journals to use in searching for specific journals
+
+
+rplos 0.0-1
+===============
+
+NEW FEATURES 
+
+* released to CRAN

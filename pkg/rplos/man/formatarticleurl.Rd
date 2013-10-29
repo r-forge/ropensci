@@ -1,0 +1,33 @@
+\name{formatarticleurl}
+\alias{formatarticleurl}
+\title{Format a URL for a specific article in a specific PLoS journal.}
+\usage{
+  formatarticleurl(doi, journal)
+}
+\arguments{
+  \item{doi}{digital object identifier for an article in
+  PLoS Journals}
+
+  \item{journal}{quoted journal name (character)}
+}
+\value{
+  Get url for the article to use in your browser, etc.
+}
+\description{
+  Format a URL for a specific article in a specific PLoS
+  journal.
+}
+\details{
+  Choose the journal abbreviation, and the appropriate base
+  URL will be inclued in the built URL.  Options are:
+  PLoSBiology, PLoSGenetics, PLoSComputationalBiology,
+  PLoSMedicine, PLoSONE, PLoSNeglectedTropicalDiseases, or
+  PLoSPathogens.
+}
+\examples{
+\dontrun{
+formatarticleurl("10.1371/journal.pone.0004045", 'PLoSONE')
+}
+}
+\keyword{internal}
+

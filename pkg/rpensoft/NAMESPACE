@@ -1,0 +1,6 @@
+export(ps_getrecord)
+export(ps_identify)
+export(ps_listidentifiers)
+import(OAIHarvester)
+import(RCurl)
+import(XML)
